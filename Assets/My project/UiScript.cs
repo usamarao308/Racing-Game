@@ -9,6 +9,9 @@ public class UiScript : MonoBehaviour
     public GameObject missedcheckpointText;
     public GameObject positionText;
 
+    public GameObject pauseGameMenu;
+
+
     public GameObject lapText;
 
    // public Text finalpostext;
@@ -39,6 +42,12 @@ public class UiScript : MonoBehaviour
             Player.GetComponent<CheckPoints>().missed=false;
 
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseGameMenu.SetActive(true);
+            Time.timeScale=0;
+        }
         
     }
 
@@ -48,6 +57,12 @@ public class UiScript : MonoBehaviour
         yield return new WaitForSeconds(2);
         missedcheckpointText.SetActive(false);
 
+    }
+
+    public void resumeGame()
+    {
+        Time.timeScale=1;
+        pauseGameMenu.SetActive(false);
     }
 
    /* public void showfinalpos()

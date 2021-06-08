@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/My project/mainMenu.unity
+    guid: ad6d790764171c74db277ba732e50156
+  - enabled: 1
+    path: Assets/My project/chooseCar.unity
+    guid: 850ff8e9d2b3d7c449a2920d789f8bd6
+  - enabled: 1
+    path: Assets/My project/myTrack.unity
+    guid: 7c63056d2bd56a640a0e221a0575940e
   m_configObjects: {}

@@ -10,6 +10,15 @@ public class CameraFollow : MonoBehaviour
 
 
     // Update is called once per frame
+    void Start()
+    {
+        findPlayer();
+    }
+
+    void findPlayer()
+    {
+        target=GameObject.Find(Options.getCar()).transform;
+    }
     void LateUpdate()
     {
         if(target == null)

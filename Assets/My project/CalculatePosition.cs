@@ -49,7 +49,7 @@ public class CalculatePosition : MonoBehaviour
 
         SetPosition(name, checkpoints.lap, checkpoints.checkpoint, checkpoints.timehit);
 
-        if(name=="MyPlayer")
+        if(name=="MyPlayer" || name=="MyPlayer")
         {
             string position=getPositions(name);
             Debug.Log(position);

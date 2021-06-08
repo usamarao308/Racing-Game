@@ -28,7 +28,12 @@ public class RaceManager : MonoBehaviour
     {
         if(checkPoints.lap > maxLaps)
         {
+             if(player)
+                {
+            
             StopCar(player);
+                }
+        
 
         }
 
@@ -36,7 +41,10 @@ public class RaceManager : MonoBehaviour
         {
             if(ai.GetComponent<CheckPoints>().lap>maxLaps)
             {
+                if(player)
+                {
                 StopCar(player);
+                }
             }
         }
     }
